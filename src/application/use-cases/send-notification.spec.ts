@@ -9,7 +9,7 @@ describe('Send notification', () => {
     const { notification } = await sendNotification.execute({
       recipientId: 'example-recipient-id',
       category: 'social',
-      content: 'This is a notification!',
+      content: 'You received a new friend request!',
     });
 
     expect(notificationsRepository.notifications).toHaveLength(1);
